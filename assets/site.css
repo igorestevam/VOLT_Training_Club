@@ -2,7 +2,7 @@
    Site-specific rules authored locally; not copied from SITE123's proprietary stylesheets. */
 :root {
   --background-color:#0b0b0c; --text-color:#f4f4f4; --text-muted:#aaabae;
-  --primary-color:#f02a30; --accent-color:#ff554d; --ink:#0b0b0c;
+  --primary-color:#ff1424; --accent-color:#ff454d; --ink:#0b0b0c;
   --graphite:#171719; --surface-color:#1e1e20; --white:#f1f0ec;
   --ink-muted:#626266; --header-height:68px;
 }
@@ -22,7 +22,7 @@ button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,
 .t-xxl {font-size:clamp(3.45rem,7vw,7.3rem);line-height:.96}
 .t-xl {font-size:clamp(2.5rem,4.25vw,4.7rem)}
 .eyebrow {font-size:.66rem;letter-spacing:.3em;text-transform:uppercase;font-weight:700;color:var(--primary-color);line-height:1.5}
-.eyebrow.on-light {color:#d92b32}
+.eyebrow.on-light {color:#c9081d}
 .lead {font-size:clamp(.96rem,1.45vw,1.12rem);font-weight:400;line-height:1.85;color:var(--text-muted)}
 /* Header and mobile drawer */
 .site-header {position:fixed;z-index:100;left:0;right:0;top:0;height:var(--header-height);border-bottom:1px solid rgba(255,255,255,.12);background:rgba(10,10,11,.7);backdrop-filter:blur(17px);-webkit-backdrop-filter:blur(17px);transition:background .25s,border .25s}
@@ -30,8 +30,8 @@ button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,
 .site-header .shell {height:100%}
 .nav-link {font-size:.69rem;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:#cacace;transition:color .2s}
 .nav-link:hover,.nav-link:focus-visible {color:#fff}
-.btn-volt {display:inline-flex;align-items:center;justify-content:center;gap:.8rem;border:1px solid var(--primary-color);background:var(--primary-color);color:#fff;min-height:52px;padding:0 1.6rem;font-size:.72rem;line-height:1.2;letter-spacing:.075em;font-weight:700;text-transform:uppercase;transition:transform .24s,background .24s,border-color .24s;box-shadow:0 0 30px rgba(240,42,48,.08)}
-.btn-volt:hover,.btn-volt:focus-visible {background:#cf1d26;border-color:#cf1d26;transform:translateY(-2px)}
+.btn-volt {display:inline-flex;align-items:center;justify-content:center;gap:.8rem;border:1px solid var(--primary-color);background:var(--primary-color);color:#fff;min-height:52px;padding:0 1.6rem;font-size:.72rem;line-height:1.2;letter-spacing:.075em;font-weight:700;text-transform:uppercase;transition:transform .24s,background .24s,border-color .24s,box-shadow .24s;box-shadow:0 8px 28px rgba(255,20,36,.24)}
+.btn-volt:hover,.btn-volt:focus-visible {background:#dc001b;border-color:#dc001b;transform:translateY(-2px);box-shadow:0 12px 36px rgba(255,20,36,.36)}
 .btn-volt.is-sm {min-height:41px;padding-inline:1.1rem;font-size:.63rem}
 .btn-volt.is-block {display:flex;width:100%}
 .btn-line {display:inline-flex;align-items:center;justify-content:center;gap:.8rem;min-height:52px;padding:0 1.15rem;border-bottom:1px solid rgba(255,255,255,.6);font-size:.73rem;letter-spacing:.08em;font-weight:700;text-transform:uppercase;color:#fff;transition:color .2s,border-color .2s}
@@ -60,7 +60,7 @@ button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,
 .marquee:hover .marquee-track {animation-play-state:paused}
 /* Cards and images */
 .mod-card {min-width:0;overflow:hidden;border:1px solid rgba(255,255,255,.11);background:var(--surface-color);transition:transform .3s,border-color .3s}
-.mod-card:hover {transform:translateY(-4px);border-color:rgba(240,42,48,.62)}
+.mod-card:hover {transform:translateY(-4px);border-color:rgba(255,20,36,.76);box-shadow:0 15px 35px rgba(255,20,36,.1)}
 .mod-card img {transition:transform .6s cubic-bezier(.2,.8,.2,1)}
 .mod-card:hover img {transform:scale(1.06)}
 .mod-index {font-family:'Anton',Impact,sans-serif;font-size:4rem;line-height:1;color:white;opacity:.88;text-shadow:0 2px 15px rgba(0,0,0,.45)}
