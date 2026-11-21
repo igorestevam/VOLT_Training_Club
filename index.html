@@ -1,0 +1,661 @@
+<!doctype html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0b0c">
+  <meta name="description" content="Musculação, treinamento funcional, HIIT e acompanhamento personalizado. Conheça a VOLT Training Club.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="VOLT Training Club — Supere seus limites">
+  <meta property="og:description" content="Força, condicionamento e comunidade. Descubra a VOLT Training Club.">
+  <meta property="og:image" content="https://files.cdn-files-a.com/admin/system_photos_stock/1600_69630ddcb8047.jpg?ratio=16:9&amp;format=avif">
+  <meta name="color-scheme" content="dark light">
+  <title>VOLT Training Club — Supere seus limites</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://files.cdn-files-a.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+  <link href="assets/tailwind.css" rel="stylesheet">
+  <link href="assets/site.css" rel="stylesheet">
+  <link rel="preload" as="image" href="https://files.cdn-files-a.com/admin/system_photos_stock/1600_69630ddcb8047.jpg?ratio=16:9&amp;format=avif">
+  <noscript><style>.reveal{opacity:1!important;transform:none!important}</style></noscript>
+</head>
+<body class="min-h-screen bg-[var(--background-color)] text-[var(--text-color)]">
+ twig-include:global/header.html 
+ Explain: Shared site header. 
+<header class="site-header" id="site-header">
+<div class="shell flex items-center justify-between gap-3 py-3">
+<a aria-label="VOLT Training Club — ir para o início" class="group flex items-center gap-2.5" href="#top">
+<span class="flex h-9 w-9 shrink-0 items-center justify-center bg-[var(--primary-color)] transition-transform duration-300 group-hover:-rotate-6">
+<i aria-hidden="true" class="fa-solid fa-bolt text-sm text-white"></i>
+</span>
+<span class="block leading-none">
+<span class="display block text-[1.3rem] text-white">Volt</span>
+<span class="mt-1 block text-[0.46rem] font-semibold uppercase tracking-[0.4em] text-white/45">Training Club</span>
+</span>
+</a>
+<nav aria-label="Navegação principal" class="hidden items-center gap-7 lg:flex">
+<a class="nav-link" href="#modalidades">Modalidades</a>
+<a class="nav-link" href="#experiencia">Experiência</a>
+<a class="nav-link" href="#estrutura">Estrutura</a>
+<a class="nav-link" href="#planos">Planos</a>
+<a class="nav-link" href="#faq">FAQ</a>
+</nav>
+<div class="flex items-center gap-2">
+<div class="hidden sm:block">
+<a class="btn-volt is-sm" data-wa="" href="https://wa.me/?text=Quero%20agendar%20uma%20aula%20experimental%20no%20VOLT%20Training%20Club" rel="noopener noreferrer" target="_blank">
+<i aria-hidden="true" class="fa-brands fa-whatsapp"></i>
+                    Aula experimental
+                </a>
+</div>
+<button aria-controls="mobile-nav" aria-expanded="false" aria-label="Abrir menu de navegação" class="nav-toggle" id="nav-toggle" type="button">
+<span></span><span></span><span></span>
+</button>
+</div>
+</div>
+<div aria-hidden="true" class="drawer" id="mobile-nav">
+<div class="flex items-center justify-between gap-3">
+<span class="display text-[1.3rem] text-white">Volt<span class="text-[var(--primary-color)]">.</span></span>
+<button aria-label="Fechar menu" class="flex h-11 w-11 cursor-pointer items-center justify-center border border-white/25 text-white transition-colors hover:border-white/60" id="nav-close" type="button">
+<i aria-hidden="true" class="fa-solid fa-xmark"></i>
+</button>
+</div>
+<nav aria-label="Navegação mobile" class="mt-6 flex flex-col">
+<a class="drawer-link" href="#modalidades">
+                Modalidades
+                <i aria-hidden="true" class="fa-solid fa-arrow-right text-xs text-[var(--primary-color)]"></i>
+</a>
+<a class="drawer-link" href="#experiencia">
+                Experiência
+                <i aria-hidden="true" class="fa-solid fa-arrow-right text-xs text-[var(--primary-color)]"></i>
+</a>
+<a class="drawer-link" href="#estrutura">
+                Estrutura
+                <i aria-hidden="true" class="fa-solid fa-arrow-right text-xs text-[var(--primary-color)]"></i>
+</a>
+<a class="drawer-link" href="#planos">
+                Planos
+                <i aria-hidden="true" class="fa-solid fa-arrow-right text-xs text-[var(--primary-color)]"></i>
+</a>
+<a class="drawer-link" href="#faq">
+                FAQ
+                <i aria-hidden="true" class="fa-solid fa-arrow-right text-xs text-[var(--primary-color)]"></i>
+</a>
+</nav>
+<a class="btn-volt is-block mt-6" data-wa="" href="https://wa.me/?text=Quero%20agendar%20uma%20aula%20experimental%20no%20VOLT%20Training%20Club" rel="noopener noreferrer" target="_blank">
+<i aria-hidden="true" class="fa-brands fa-whatsapp"></i>
+            Agendar aula experimental
+        </a>
+<p class="mt-4 text-xs leading-relaxed text-white/40">
+            Horários, valores dos planos e condições são informados pela equipe no atendimento.
+        </p>
+</div>
+</header>
+ /twig-include:global/header.html 
+<main id="top">
+<!-- twig-include:sections/index.hero.html --><!-- Explain: Homepage hero section with main call to action. -->
+<section class="relative flex min-h-[90vh] flex-col justify-end overflow-hidden bg-[var(--ink)]">
+<img alt="Atleta executando treino de força com barra em academia com iluminação cinematográfica" class="absolute inset-0 h-full w-full object-cover object-center" decoding="async" fetchpriority="high" sizes="100vw" src="https://files.cdn-files-a.com/admin/system_photos_stock/1600_69630ddcb8047.jpg?ratio=16:9&amp;format=avif" srcset="https://files.cdn-files-a.com/admin/system_photos_stock/100_69630ddcb8047.jpg?ratio=16:9&amp;format=avif 100w, https://files.cdn-files-a.com/admin/system_photos_stock/400_69630ddcb8047.jpg?ratio=16:9&amp;format=avif 400w, https://files.cdn-files-a.com/admin/system_photos_stock/800_69630ddcb8047.jpg?ratio=16:9&amp;format=avif 800w, https://files.cdn-files-a.com/admin/system_photos_stock/1200_69630ddcb8047.jpg?ratio=16:9&amp;format=avif 1200w, https://files.cdn-files-a.com/admin/system_photos_stock/1600_69630ddcb8047.jpg?ratio=16:9&amp;format=avif 1600w, https://files.cdn-files-a.com/admin/system_photos_stock/2000_69630ddcb8047.jpg?ratio=16:9&amp;format=avif 2000w"/>
+<div class="scrim-hero absolute inset-0"></div>
+<div class="shell relative pb-12 pt-32 sm:pb-14 lg:pb-16">
+<p class="eyebrow reveal text-white/70">Força · Condicionamento · Comunidade</p>
+<h1 class="display t-hero reveal mt-5 text-white">
+            Supere<br/>
+            seus <span class="text-[var(--primary-color)]">limites.</span>
+</h1>
+<p class="lead reveal mt-6 max-w-xl text-white/75">
+            Musculação, treino funcional, HIIT e acompanhamento personalizado em um ambiente feito
+            para quem quer evoluir — um treino de cada vez.
+        </p>
+<div class="reveal mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
+<a class="btn-volt" data-wa="" href="https://wa.me/?text=Quero%20agendar%20uma%20aula%20experimental%20no%20VOLT%20Training%20Club" rel="noopener noreferrer" target="_blank">
+<i aria-hidden="true" class="fa-brands fa-whatsapp text-base"></i>
+                Agendar aula experimental
+            </a>
+<a class="btn-line" href="#modalidades">
+                Conhecer modalidades
+                <i aria-hidden="true" class="fa-solid fa-arrow-right text-xs"></i>
+</a>
+</div>
+<div class="mt-12 grid grid-cols-2 border-t border-white/15 sm:grid-cols-4">
+<a class="group flex items-center justify-between gap-2 border-b border-white/10 py-3.5 text-[0.62rem] font-semibold uppercase tracking-[0.24em] text-white/55 transition-colors hover:text-white sm:border-b-0 sm:border-r sm:px-4 sm:first:pl-0" href="#modalidades">
+                Musculação
+                <i aria-hidden="true" class="fa-solid fa-arrow-right text-[0.6rem] text-[var(--primary-color)] transition-transform duration-300 group-hover:translate-x-1"></i>
+</a>
+<a class="group flex items-center justify-between gap-2 border-b border-white/10 py-3.5 text-[0.62rem] font-semibold uppercase tracking-[0.24em] text-white/55 transition-colors hover:text-white sm:border-b-0 sm:border-r sm:px-4 sm:first:pl-0" href="#modalidades">
+                Funcional
+                <i aria-hidden="true" class="fa-solid fa-arrow-right text-[0.6rem] text-[var(--primary-color)] transition-transform duration-300 group-hover:translate-x-1"></i>
+</a>
+<a class="group flex items-center justify-between gap-2 border-b border-white/10 py-3.5 text-[0.62rem] font-semibold uppercase tracking-[0.24em] text-white/55 transition-colors hover:text-white sm:border-b-0 sm:border-r sm:px-4 sm:first:pl-0" href="#modalidades">
+                HIIT
+                <i aria-hidden="true" class="fa-solid fa-arrow-right text-[0.6rem] text-[var(--primary-color)] transition-transform duration-300 group-hover:translate-x-1"></i>
+</a>
+<a class="group flex items-center justify-between gap-2 border-b border-white/10 py-3.5 text-[0.62rem] font-semibold uppercase tracking-[0.24em] text-white/55 transition-colors hover:text-white sm:border-b-0 sm:border-r sm:px-4 sm:first:pl-0" href="#modalidades">
+                Personal
+                <i aria-hidden="true" class="fa-solid fa-arrow-right text-[0.6rem] text-[var(--primary-color)] transition-transform duration-300 group-hover:translate-x-1"></i>
+</a>
+</div>
+</div>
+</section><!-- /twig-include:sections/index.hero.html -->
+<!-- twig-include:sections/index.marquee.html --><!-- Explain: Section with a scrolling announcement marquee. -->
+<section aria-label="Destaques do Volt Training Club" class="marquee">
+<div class="marquee-track">
+<div class="marquee-group">
+<span>Agende sua aula experimental</span>
+<i aria-hidden="true" class="fa-solid fa-bolt"></i>
+<span>Treino de força</span>
+<i aria-hidden="true" class="fa-solid fa-bolt"></i>
+<span>Condicionamento</span>
+<i aria-hidden="true" class="fa-solid fa-bolt"></i>
+<span>Comunidade</span>
+<i aria-hidden="true" class="fa-solid fa-bolt"></i>
+<span>Acompanhamento profissional</span>
+<i aria-hidden="true" class="fa-solid fa-bolt"></i>
+</div>
+<div aria-hidden="true" class="marquee-group">
+<span>Agende sua aula experimental</span>
+<i aria-hidden="true" class="fa-solid fa-bolt"></i>
+<span>Treino de força</span>
+<i aria-hidden="true" class="fa-solid fa-bolt"></i>
+<span>Condicionamento</span>
+<i aria-hidden="true" class="fa-solid fa-bolt"></i>
+<span>Comunidade</span>
+<i aria-hidden="true" class="fa-solid fa-bolt"></i>
+<span>Acompanhamento profissional</span>
+<i aria-hidden="true" class="fa-solid fa-bolt"></i>
+</div>
+</div>
+</section><!-- /twig-include:sections/index.marquee.html -->
+<!-- twig-include:sections/index.modalidades.html --><!-- Explain: Section showcasing different training modalities. -->
+<section class="sec scroll-mt-20 bg-[var(--ink)]" id="modalidades">
+<div class="shell grid gap-12 lg:grid-cols-12 lg:gap-10">
+<div class="lg:col-span-4">
+<p class="eyebrow">Modalidades</p>
+<h2 class="display t-xxl mt-4 text-white">
+                Treine<br/>
+                do seu<br/>
+<span class="text-[var(--primary-color)]">jeito.</span>
+</h2>
+<p class="lead mt-6 max-w-sm">
+                Quatro frentes de treino que se combinam. Você escolhe o caminho e a equipe monta a
+                programação de acordo com o seu objetivo.
+            </p>
+<a class="btn-volt mt-8" data-wa="" href="https://wa.me/?text=Quero%20saber%20mais%20sobre%20as%20modalidades%20do%20VOLT%20Training%20Club" rel="noopener noreferrer" target="_blank">
+<i aria-hidden="true" class="fa-brands fa-whatsapp"></i>
+                Falar com a equipe
+            </a>
+</div>
+<div class="grid gap-4 sm:grid-cols-2 lg:col-span-8">
+<article class="mod-card flex h-full flex-col">
+<div class="relative aspect-[4/3] overflow-hidden">
+<img alt="Anilhas e barra de musculação organizadas em prateleira de academia" class="h-full w-full object-cover" decoding="async" loading="lazy" sizes="(min-width: 1024px) 50vw, 100vw" src="https://files.cdn-files-a.com/uploads/12685189/800_un-6b01a8098548a.jpg?ratio=3:2&amp;format=avif" srcset="https://files.cdn-files-a.com/uploads/12685189/100_un-6b01a8098548a.jpg?ratio=3:2&amp;format=avif 100w, https://files.cdn-files-a.com/uploads/12685189/400_un-6b01a8098548a.jpg?ratio=3:2&amp;format=avif 400w, https://files.cdn-files-a.com/uploads/12685189/800_un-6b01a8098548a.jpg?ratio=3:2&amp;format=avif 800w, https://files.cdn-files-a.com/uploads/12685189/1200_un-6b01a8098548a.jpg?ratio=3:2&amp;format=avif 1200w, https://files.cdn-files-a.com/uploads/12685189/1600_un-6b01a8098548a.jpg?ratio=3:2&amp;format=avif 1600w, https://files.cdn-files-a.com/uploads/12685189/2000_un-6b01a8098548a.jpg?ratio=3:2&amp;format=avif 2000w"/>
+<div class="scrim-caption absolute inset-0"></div>
+<span class="mod-index absolute bottom-3 left-4">01</span>
+</div>
+<div class="flex flex-1 flex-col gap-2 p-5">
+<h3 class="display text-[1.4rem] text-white">Musculação</h3>
+<p class="text-sm leading-relaxed text-[var(--text-muted)]">Treino de força com progressão planejada, séries organizadas e foco em consistência para ganhar massa e potência.</p>
+</div>
+</article>
+<article class="mod-card flex h-full flex-col sm:mt-10">
+<div class="relative aspect-[4/3] overflow-hidden">
+<img alt="Atleta em treinamento funcional com kettlebell em área aberta da academia" class="h-full w-full object-cover" decoding="async" loading="lazy" sizes="(min-width: 1024px) 50vw, 100vw" src="https://files.cdn-files-a.com/admin/system_photos_stock/800_695b1d7d47c4d.jpg?ratio=16:9&amp;format=avif" srcset="https://files.cdn-files-a.com/admin/system_photos_stock/100_695b1d7d47c4d.jpg?ratio=16:9&amp;format=avif 100w, https://files.cdn-files-a.com/admin/system_photos_stock/400_695b1d7d47c4d.jpg?ratio=16:9&amp;format=avif 400w, https://files.cdn-files-a.com/admin/system_photos_stock/800_695b1d7d47c4d.jpg?ratio=16:9&amp;format=avif 800w, https://files.cdn-files-a.com/admin/system_photos_stock/1200_695b1d7d47c4d.jpg?ratio=16:9&amp;format=avif 1200w, https://files.cdn-files-a.com/admin/system_photos_stock/1600_695b1d7d47c4d.jpg?ratio=16:9&amp;format=avif 1600w, https://files.cdn-files-a.com/admin/system_photos_stock/2000_695b1d7d47c4d.jpg?ratio=16:9&amp;format=avif 2000w"/>
+<div class="scrim-caption absolute inset-0"></div>
+<span class="mod-index absolute bottom-3 left-4">02</span>
+</div>
+<div class="flex flex-1 flex-col gap-2 p-5">
+<h3 class="display text-[1.4rem] text-white">Treinamento funcional</h3>
+<p class="text-sm leading-relaxed text-[var(--text-muted)]">Movimentos multiarticulares que transferem força e estabilidade para o seu dia, dentro e fora da academia.</p>
+</div>
+</article>
+<article class="mod-card flex h-full flex-col">
+<div class="relative aspect-[4/3] overflow-hidden">
+<img alt="Atleta em treino intervalado de alta intensidade no remo ergômetro" class="h-full w-full object-cover" decoding="async" loading="lazy" sizes="(min-width: 1024px) 50vw, 100vw" src="https://files.cdn-files-a.com/admin/system_photos_stock/800_6af759e973159.jpg?ratio=16:9&amp;format=avif" srcset="https://files.cdn-files-a.com/admin/system_photos_stock/100_6af759e973159.jpg?ratio=16:9&amp;format=avif 100w, https://files.cdn-files-a.com/admin/system_photos_stock/400_6af759e973159.jpg?ratio=16:9&amp;format=avif 400w, https://files.cdn-files-a.com/admin/system_photos_stock/800_6af759e973159.jpg?ratio=16:9&amp;format=avif 800w, https://files.cdn-files-a.com/admin/system_photos_stock/1200_6af759e973159.jpg?ratio=16:9&amp;format=avif 1200w, https://files.cdn-files-a.com/admin/system_photos_stock/1600_6af759e973159.jpg?ratio=16:9&amp;format=avif 1600w, https://files.cdn-files-a.com/admin/system_photos_stock/2000_6af759e973159.jpg?ratio=16:9&amp;format=avif 2000w"/>
+<div class="scrim-caption absolute inset-0"></div>
+<span class="mod-index absolute bottom-3 left-4">03</span>
+</div>
+<div class="flex flex-1 flex-col gap-2 p-5">
+<h3 class="display text-[1.4rem] text-white">HIIT</h3>
+<p class="text-sm leading-relaxed text-[var(--text-muted)]">Sessões curtas de alta intensidade para condicionamento, explosão e capacidade cardiorrespiratória.</p>
+</div>
+</article>
+<article class="mod-card flex h-full flex-col sm:mt-10">
+<div class="relative aspect-[4/3] overflow-hidden">
+<img alt="Personal trainer orientando aluna durante execução de exercício" class="h-full w-full object-cover" decoding="async" loading="lazy" sizes="(min-width: 1024px) 50vw, 100vw" src="https://files.cdn-files-a.com/admin/system_photos_stock/800_695fbab1a46b5.jpg?ratio=16:9&amp;format=avif" srcset="https://files.cdn-files-a.com/admin/system_photos_stock/100_695fbab1a46b5.jpg?ratio=16:9&amp;format=avif 100w, https://files.cdn-files-a.com/admin/system_photos_stock/400_695fbab1a46b5.jpg?ratio=16:9&amp;format=avif 400w, https://files.cdn-files-a.com/admin/system_photos_stock/800_695fbab1a46b5.jpg?ratio=16:9&amp;format=avif 800w, https://files.cdn-files-a.com/admin/system_photos_stock/1200_695fbab1a46b5.jpg?ratio=16:9&amp;format=avif 1200w, https://files.cdn-files-a.com/admin/system_photos_stock/1600_695fbab1a46b5.jpg?ratio=16:9&amp;format=avif 1600w, https://files.cdn-files-a.com/admin/system_photos_stock/2000_695fbab1a46b5.jpg?ratio=16:9&amp;format=avif 2000w"/>
+<div class="scrim-caption absolute inset-0"></div>
+<span class="mod-index absolute bottom-3 left-4">04</span>
+</div>
+<div class="flex flex-1 flex-col gap-2 p-5">
+<h3 class="display text-[1.4rem] text-white">Personalizado</h3>
+<p class="text-sm leading-relaxed text-[var(--text-muted)]">Programa individual com avaliação, ajustes constantes e execução corrigida por um profissional.</p>
+</div>
+</article>
+</div>
+</div>
+</section><!-- /twig-include:sections/index.modalidades.html -->
+<!-- twig-include:sections/index.experiencia.html --><!-- Explain: Section detailing the gym's experience pillars. -->
+<section class="sec scroll-mt-20 border-y border-white/10 bg-[var(--graphite)]" id="experiencia">
+<div class="shell grid gap-12 lg:grid-cols-12 lg:gap-14">
+<div class="lg:col-span-5">
+<p class="eyebrow">A experiência VOLT</p>
+<h2 class="display t-xxl mt-4 text-white">
+                Mais que<br/>
+                uma<br/>
+<span class="text-[var(--primary-color)]">academia.</span>
+</h2>
+<p class="lead mt-6 max-w-md">
+                Tudo o que envolve o seu treino importa: o espaço, os equipamentos, quem orienta e
+                quem treina ao seu lado. É isso que sustenta a rotina.
+            </p>
+<div class="mt-8 aspect-[4/5] w-full overflow-hidden border border-white/10">
+<img alt="Vista ampla do salão de treino da academia com equipamentos modernos" class="h-full w-full object-cover" decoding="async" loading="lazy" sizes="(min-width: 1024px) 50vw, 100vw" src="https://files.cdn-files-a.com/admin/system_photos_stock/800_6af68525f2eba.jpg?ratio=2:3&amp;format=avif" srcset="https://files.cdn-files-a.com/admin/system_photos_stock/100_6af68525f2eba.jpg?ratio=2:3&amp;format=avif 100w, https://files.cdn-files-a.com/admin/system_photos_stock/400_6af68525f2eba.jpg?ratio=2:3&amp;format=avif 400w, https://files.cdn-files-a.com/admin/system_photos_stock/800_6af68525f2eba.jpg?ratio=2:3&amp;format=avif 800w, https://files.cdn-files-a.com/admin/system_photos_stock/1200_6af68525f2eba.jpg?ratio=2:3&amp;format=avif 1200w, https://files.cdn-files-a.com/admin/system_photos_stock/1600_6af68525f2eba.jpg?ratio=2:3&amp;format=avif 1600w, https://files.cdn-files-a.com/admin/system_photos_stock/2000_6af68525f2eba.jpg?ratio=2:3&amp;format=avif 2000w"/>
+</div>
+</div>
+<div class="lg:col-span-7">
+<div class="grid border-t border-white/10">
+<div class="flex gap-5 border-b border-white/10 py-6">
+<span class="display shrink-0 text-[2rem] leading-none text-white/15">01</span>
+<div>
+<h3 class="flex items-center gap-2.5 text-[0.9rem] font-semibold uppercase tracking-[0.16em] text-white">
+<i aria-hidden="true" class="fa-solid fa-lightbulb text-[var(--primary-color)]"></i>
+                            Ambiente
+                        </h3>
+<p class="mt-2 text-sm leading-relaxed text-[var(--text-muted)]">Espaço amplo, iluminação direta e ventilação pensada para treino intenso do começo ao fim.</p>
+</div>
+</div>
+<div class="flex gap-5 border-b border-white/10 py-6">
+<span class="display shrink-0 text-[2rem] leading-none text-white/15">02</span>
+<div>
+<h3 class="flex items-center gap-2.5 text-[0.9rem] font-semibold uppercase tracking-[0.16em] text-white">
+<i aria-hidden="true" class="fa-solid fa-dumbbell text-[var(--primary-color)]"></i>
+                            Equipamentos
+                        </h3>
+<p class="mt-2 text-sm leading-relaxed text-[var(--text-muted)]">Estrutura de força e condicionamento para treinos completos, do aquecimento à última série.</p>
+</div>
+</div>
+<div class="flex gap-5 border-b border-white/10 py-6">
+<span class="display shrink-0 text-[2rem] leading-none text-white/15">03</span>
+<div>
+<h3 class="flex items-center gap-2.5 text-[0.9rem] font-semibold uppercase tracking-[0.16em] text-white">
+<i aria-hidden="true" class="fa-solid fa-clipboard-check text-[var(--primary-color)]"></i>
+                            Acompanhamento
+                        </h3>
+<p class="mt-2 text-sm leading-relaxed text-[var(--text-muted)]">Orientação técnica em cada execução, com ajustes constantes na sua programação de treino.</p>
+</div>
+</div>
+<div class="flex gap-5 border-b border-white/10 py-6">
+<span class="display shrink-0 text-[2rem] leading-none text-white/15">04</span>
+<div>
+<h3 class="flex items-center gap-2.5 text-[0.9rem] font-semibold uppercase tracking-[0.16em] text-white">
+<i aria-hidden="true" class="fa-solid fa-users text-[var(--primary-color)]"></i>
+                            Comunidade
+                        </h3>
+<p class="mt-2 text-sm leading-relaxed text-[var(--text-muted)]">Gente que treina junto, cobra presença e comemora cada evolução — sem julgamento.</p>
+</div>
+</div>
+</div>
+<p class="display t-xl mt-10 text-white/90">
+                Disciplina não é tendência.<br/>
+<span class="text-[var(--primary-color)]">É rotina.</span>
+</p>
+</div>
+</div>
+</section><!-- /twig-include:sections/index.experiencia.html -->
+<!-- twig-include:sections/index.estrutura.html --><!-- Explain: Section displaying the gym's structure with masonry layout. -->
+<section class="sec scroll-mt-20 bg-[var(--white)] text-[var(--ink)]" id="estrutura">
+<div class="shell">
+<div class="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
+<div>
+<p class="eyebrow on-light">Estrutura</p>
+<h2 class="display t-xxl mt-4">
+                    Espaço<br/>
+                    para treinar<br/>
+<span class="text-[var(--primary-color)]">de verdade.</span>
+</h2>
+</div>
+<p class="max-w-sm text-sm leading-relaxed text-[var(--ink-muted)]">
+                Ambiente preparado para treino pesado: equipamentos de força, área livre para funcional,
+                espaço cardiovascular e estações para treinos de alta intensidade.
+            </p>
+</div>
+<div class="masonry mt-12">
+<figure class="aspect-[3/4]">
+<img alt="Rack de anilhas e discos de peso na área de musculação" class="h-full w-full object-cover" decoding="async" loading="lazy" sizes="(min-width: 1024px) 35vw, (min-width: 640px) 50vw, 100vw" src="https://files.cdn-files-a.com/admin/system_photos_stock/800_6af2763482a23.jpg?ratio=2:3&amp;format=avif" srcset="https://files.cdn-files-a.com/admin/system_photos_stock/100_6af2763482a23.jpg?ratio=2:3&amp;format=avif 100w, https://files.cdn-files-a.com/admin/system_photos_stock/400_6af2763482a23.jpg?ratio=2:3&amp;format=avif 400w, https://files.cdn-files-a.com/admin/system_photos_stock/800_6af2763482a23.jpg?ratio=2:3&amp;format=avif 800w, https://files.cdn-files-a.com/admin/system_photos_stock/1200_6af2763482a23.jpg?ratio=2:3&amp;format=avif 1200w, https://files.cdn-files-a.com/admin/system_photos_stock/1600_6af2763482a23.jpg?ratio=2:3&amp;format=avif 1600w, https://files.cdn-files-a.com/admin/system_photos_stock/2000_6af2763482a23.jpg?ratio=2:3&amp;format=avif 2000w"/>
+<figcaption class="scrim-caption absolute inset-x-0 bottom-0 p-3 text-[0.56rem] font-semibold uppercase tracking-[0.28em] text-white sm:p-4">Sala de força</figcaption>
+</figure>
+<figure class="aspect-[4/3]">
+<img alt="Estação de cabos e polias para treino de força" class="h-full w-full object-cover" decoding="async" loading="lazy" sizes="(min-width: 1024px) 35vw, (min-width: 640px) 50vw, 100vw" src="https://files.cdn-files-a.com/admin/system_photos_stock/800_6af55f13ecf80.jpg?ratio=16:9&amp;format=avif" srcset="https://files.cdn-files-a.com/admin/system_photos_stock/100_6af55f13ecf80.jpg?ratio=16:9&amp;format=avif 100w, https://files.cdn-files-a.com/admin/system_photos_stock/400_6af55f13ecf80.jpg?ratio=16:9&amp;format=avif 400w, https://files.cdn-files-a.com/admin/system_photos_stock/800_6af55f13ecf80.jpg?ratio=16:9&amp;format=avif 800w, https://files.cdn-files-a.com/admin/system_photos_stock/1200_6af55f13ecf80.jpg?ratio=16:9&amp;format=avif 1200w, https://files.cdn-files-a.com/admin/system_photos_stock/1600_6af55f13ecf80.jpg?ratio=16:9&amp;format=avif 1600w, https://files.cdn-files-a.com/admin/system_photos_stock/2000_6af55f13ecf80.jpg?ratio=16:9&amp;format=avif 2000w"/>
+</figure>
+<figure class="aspect-[4/5]">
+<img alt="Área de treino ampla com pé-direito alto e iluminação industrial" class="h-full w-full object-cover" decoding="async" loading="lazy" sizes="(min-width: 1024px) 35vw, (min-width: 640px) 50vw, 100vw" src="https://files.cdn-files-a.com/admin/system_photos_stock/800_6af68525f2eba.jpg?ratio=2:3&amp;format=avif" srcset="https://files.cdn-files-a.com/admin/system_photos_stock/100_6af68525f2eba.jpg?ratio=2:3&amp;format=avif 100w, https://files.cdn-files-a.com/admin/system_photos_stock/400_6af68525f2eba.jpg?ratio=2:3&amp;format=avif 400w, https://files.cdn-files-a.com/admin/system_photos_stock/800_6af68525f2eba.jpg?ratio=2:3&amp;format=avif 800w, https://files.cdn-files-a.com/admin/system_photos_stock/1200_6af68525f2eba.jpg?ratio=2:3&amp;format=avif 1200w, https://files.cdn-files-a.com/admin/system_photos_stock/1600_6af68525f2eba.jpg?ratio=2:3&amp;format=avif 1600w, https://files.cdn-files-a.com/admin/system_photos_stock/2000_6af68525f2eba.jpg?ratio=2:3&amp;format=avif 2000w"/>
+<figcaption class="scrim-caption absolute inset-x-0 bottom-0 p-3 text-[0.56rem] font-semibold uppercase tracking-[0.28em] text-white sm:p-4">Área de treino</figcaption>
+</figure>
+<figure class="aspect-[3/2]">
+<img alt="Kettlebells organizados no piso da área de treinamento funcional" class="h-full w-full object-cover" decoding="async" loading="lazy" sizes="(min-width: 1024px) 35vw, (min-width: 640px) 50vw, 100vw" src="https://files.cdn-files-a.com/admin/system_photos_stock/800_6af22fc303f63.jpg?ratio=16:9&amp;format=avif" srcset="https://files.cdn-files-a.com/admin/system_photos_stock/100_6af22fc303f63.jpg?ratio=16:9&amp;format=avif 100w, https://files.cdn-files-a.com/admin/system_photos_stock/400_6af22fc303f63.jpg?ratio=16:9&amp;format=avif 400w, https://files.cdn-files-a.com/admin/system_photos_stock/800_6af22fc303f63.jpg?ratio=16:9&amp;format=avif 800w, https://files.cdn-files-a.com/admin/system_photos_stock/1200_6af22fc303f63.jpg?ratio=16:9&amp;format=avif 1200w, https://files.cdn-files-a.com/admin/system_photos_stock/1600_6af22fc303f63.jpg?ratio=16:9&amp;format=avif 1600w, https://files.cdn-files-a.com/admin/system_photos_stock/2000_6af22fc303f63.jpg?ratio=16:9&amp;format=avif 2000w"/>
+</figure>
+<figure class="aspect-[3/4]">
+<img alt="Fileira de halteres em frente ao espelho da academia" class="h-full w-full object-cover" decoding="async" loading="lazy" sizes="(min-width: 1024px) 35vw, (min-width: 640px) 50vw, 100vw" src="https://files.cdn-files-a.com/admin/system_photos_stock/800_6af97cf3db778.jpg?ratio=2:3&amp;format=avif" srcset="https://files.cdn-files-a.com/admin/system_photos_stock/100_6af97cf3db778.jpg?ratio=2:3&amp;format=avif 100w, https://files.cdn-files-a.com/admin/system_photos_stock/400_6af97cf3db778.jpg?ratio=2:3&amp;format=avif 400w, https://files.cdn-files-a.com/admin/system_photos_stock/800_6af97cf3db778.jpg?ratio=2:3&amp;format=avif 800w, https://files.cdn-files-a.com/admin/system_photos_stock/1200_6af97cf3db778.jpg?ratio=2:3&amp;format=avif 1200w, https://files.cdn-files-a.com/admin/system_photos_stock/1600_6af97cf3db778.jpg?ratio=2:3&amp;format=avif 1600w, https://files.cdn-files-a.com/admin/system_photos_stock/2000_6af97cf3db778.jpg?ratio=2:3&amp;format=avif 2000w"/>
+<figcaption class="scrim-caption absolute inset-x-0 bottom-0 p-3 text-[0.56rem] font-semibold uppercase tracking-[0.28em] text-white sm:p-4">Pesos livres</figcaption>
+</figure>
+<figure class="aspect-[4/3]">
+<img alt="Esteiras alinhadas na área de condicionamento cardiovascular" class="h-full w-full object-cover" decoding="async" loading="lazy" sizes="(min-width: 1024px) 35vw, (min-width: 640px) 50vw, 100vw" src="https://files.cdn-files-a.com/admin/system_photos_stock/800_6af759e973159.jpg?ratio=16:9&amp;format=avif" srcset="https://files.cdn-files-a.com/admin/system_photos_stock/100_6af759e973159.jpg?ratio=16:9&amp;format=avif 100w, https://files.cdn-files-a.com/admin/system_photos_stock/400_6af759e973159.jpg?ratio=16:9&amp;format=avif 400w, https://files.cdn-files-a.com/admin/system_photos_stock/800_6af759e973159.jpg?ratio=16:9&amp;format=avif 800w, https://files.cdn-files-a.com/admin/system_photos_stock/1200_6af759e973159.jpg?ratio=16:9&amp;format=avif 1200w, https://files.cdn-files-a.com/admin/system_photos_stock/1600_6af759e973159.jpg?ratio=16:9&amp;format=avif 1600w, https://files.cdn-files-a.com/admin/system_photos_stock/2000_6af759e973159.jpg?ratio=16:9&amp;format=avif 2000w"/>
+</figure>
+<figure class="aspect-[4/5]">
+<img alt="Cordas de batalha no espaço de treino funcional" class="h-full w-full object-cover" decoding="async" loading="lazy" sizes="(min-width: 1024px) 35vw, (min-width: 640px) 50vw, 100vw" src="https://files.cdn-files-a.com/admin/system_photos_stock/800_6af6dde5ea1e0.jpg?ratio=2:3&amp;format=avif" srcset="https://files.cdn-files-a.com/admin/system_photos_stock/100_6af6dde5ea1e0.jpg?ratio=2:3&amp;format=avif 100w, https://files.cdn-files-a.com/admin/system_photos_stock/400_6af6dde5ea1e0.jpg?ratio=2:3&amp;format=avif 400w, https://files.cdn-files-a.com/admin/system_photos_stock/800_6af6dde5ea1e0.jpg?ratio=2:3&amp;format=avif 800w, https://files.cdn-files-a.com/admin/system_photos_stock/1200_6af6dde5ea1e0.jpg?ratio=2:3&amp;format=avif 1200w, https://files.cdn-files-a.com/admin/system_photos_stock/1600_6af6dde5ea1e0.jpg?ratio=2:3&amp;format=avif 1600w, https://files.cdn-files-a.com/admin/system_photos_stock/2000_6af6dde5ea1e0.jpg?ratio=2:3&amp;format=avif 2000w"/>
+<figcaption class="scrim-caption absolute inset-x-0 bottom-0 p-3 text-[0.56rem] font-semibold uppercase tracking-[0.28em] text-white sm:p-4">Funcional</figcaption>
+</figure>
+</div>
+</div>
+</section><!-- /twig-include:sections/index.estrutura.html -->
+<!-- twig-include:sections/index.planos.html --><!-- Explain: Section displaying membership plans. -->
+<section class="sec scroll-mt-20 bg-[var(--ink)]" id="planos">
+<div class="shell">
+<div class="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
+<div>
+<p class="eyebrow">Planos</p>
+<h2 class="display t-xxl mt-4 text-white">
+                    Escolha<br/>
+                    o seu <span class="text-[var(--primary-color)]">ritmo.</span>
+</h2>
+</div>
+<p class="max-w-sm text-sm leading-relaxed text-[var(--text-muted)]">
+                Dois formatos de acompanhamento. Os valores, as formas de pagamento e as condições são
+                passados direto pela equipe no atendimento.
+            </p>
+</div>
+<div class="mt-12 grid gap-4 lg:grid-cols-2">
+<article class="flex h-full flex-col border p-7 sm:p-8 border-white/10 bg-[var(--surface-color)]">
+<div class="flex items-start justify-between gap-3">
+<h3 class="display text-[2rem] leading-none text-white">Mensal</h3>
+</div>
+<p class="mt-2 text-[0.62rem] font-semibold uppercase tracking-[0.26em] text-white/40">Cobrança mensal</p>
+<div class="mt-6 border-y border-white/10 py-4">
+<p class="text-[0.58rem] font-semibold uppercase tracking-[0.28em] text-white/40">Investimento</p>
+<p class="display mt-1 text-[1.5rem] text-white">Sob consulta</p>
+</div>
+<ul class="mt-6 grid gap-2.5 text-sm text-[var(--text-muted)]">
+<li class="flex items-start gap-2.5">
+<i aria-hidden="true" class="fa-solid fa-check mt-1 text-[0.7rem] text-[var(--primary-color)]"></i>
+<span>Acesso à estrutura de treino</span>
+</li>
+<li class="flex items-start gap-2.5">
+<i aria-hidden="true" class="fa-solid fa-check mt-1 text-[0.7rem] text-[var(--primary-color)]"></i>
+<span>Orientação da equipe nos treinos</span>
+</li>
+<li class="flex items-start gap-2.5">
+<i aria-hidden="true" class="fa-solid fa-check mt-1 text-[0.7rem] text-[var(--primary-color)]"></i>
+<span>Ajustes de treino ao longo do mês</span>
+</li>
+<li class="flex items-start gap-2.5">
+<i aria-hidden="true" class="fa-solid fa-check mt-1 text-[0.7rem] text-[var(--primary-color)]"></i>
+<span>Aula experimental incluída</span>
+</li>
+</ul>
+<div class="mt-auto pt-7">
+<a class="btn-volt is-block" data-wa="" href="https://wa.me/?text=Quero%20consultar%20os%20valores%20do%20plano%20Mensal%20do%20VOLT%20Training%20Club" rel="noopener noreferrer" target="_blank">
+<i aria-hidden="true" class="fa-brands fa-whatsapp"></i>
+                        Consultar valores
+                    </a>
+</div>
+</article>
+<article class="flex h-full flex-col border p-7 sm:p-8 border-[var(--primary-color)] bg-[var(--graphite)]">
+<div class="flex items-start justify-between gap-3">
+<h3 class="display text-[2rem] leading-none text-white">Trimestral</h3>
+<span class="shrink-0 border border-[var(--primary-color)] px-2.5 py-1 text-[0.52rem] font-bold uppercase tracking-[0.22em] text-[var(--primary-color)]">Melhor valor por mês</span>
+</div>
+<p class="mt-2 text-[0.62rem] font-semibold uppercase tracking-[0.26em] text-white/40">Cobrança a cada 3 meses</p>
+<div class="mt-6 border-y border-white/10 py-4">
+<p class="text-[0.58rem] font-semibold uppercase tracking-[0.28em] text-white/40">Investimento</p>
+<p class="display mt-1 text-[1.5rem] text-white">Sob consulta</p>
+</div>
+<ul class="mt-6 grid gap-2.5 text-sm text-[var(--text-muted)]">
+<li class="flex items-start gap-2.5">
+<i aria-hidden="true" class="fa-solid fa-check mt-1 text-[0.7rem] text-[var(--primary-color)]"></i>
+<span>Tudo do plano mensal</span>
+</li>
+<li class="flex items-start gap-2.5">
+<i aria-hidden="true" class="fa-solid fa-check mt-1 text-[0.7rem] text-[var(--primary-color)]"></i>
+<span>Acompanhamento por 3 meses</span>
+</li>
+<li class="flex items-start gap-2.5">
+<i aria-hidden="true" class="fa-solid fa-check mt-1 text-[0.7rem] text-[var(--primary-color)]"></i>
+<span>Reavaliação do treino a cada ciclo</span>
+</li>
+<li class="flex items-start gap-2.5">
+<i aria-hidden="true" class="fa-solid fa-check mt-1 text-[0.7rem] text-[var(--primary-color)]"></i>
+<span>Acesso a todas as modalidades</span>
+</li>
+</ul>
+<div class="mt-auto pt-7">
+<a class="btn-volt is-block" data-wa="" href="https://wa.me/?text=Quero%20consultar%20os%20valores%20do%20plano%20Trimestral%20do%20VOLT%20Training%20Club" rel="noopener noreferrer" target="_blank">
+<i aria-hidden="true" class="fa-brands fa-whatsapp"></i>
+                        Consultar valores
+                    </a>
+</div>
+</article>
+</div>
+<p class="mt-8 text-xs leading-relaxed text-white/35">
+            Valores, formas de pagamento e condições são informados pela equipe no WhatsApp. Nenhum preço é exibido aqui para não gerar informação desatualizada.
+        </p>
+</div>
+</section><!-- /twig-include:sections/index.planos.html -->
+<!-- twig-include:sections/index.experimental.html --><!-- Explain: Section for booking trial classes. -->
+<section class="sec relative scroll-mt-20 overflow-hidden bg-[var(--ink)]" id="experimental">
+<img alt="Profissional orientando aluna durante treino de força na academia" class="absolute inset-0 h-full w-full object-cover" decoding="async" loading="lazy" sizes="(min-width: 1024px) 50vw, 100vw" src="https://files.cdn-files-a.com/admin/system_photos_stock/800_695cce012f3e2.jpg?ratio=16:9&amp;format=avif" srcset="https://files.cdn-files-a.com/admin/system_photos_stock/100_695cce012f3e2.jpg?ratio=16:9&amp;format=avif 100w, https://files.cdn-files-a.com/admin/system_photos_stock/400_695cce012f3e2.jpg?ratio=16:9&amp;format=avif 400w, https://files.cdn-files-a.com/admin/system_photos_stock/800_695cce012f3e2.jpg?ratio=16:9&amp;format=avif 800w, https://files.cdn-files-a.com/admin/system_photos_stock/1200_695cce012f3e2.jpg?ratio=16:9&amp;format=avif 1200w, https://files.cdn-files-a.com/admin/system_photos_stock/1600_695cce012f3e2.jpg?ratio=16:9&amp;format=avif 1600w, https://files.cdn-files-a.com/admin/system_photos_stock/2000_695cce012f3e2.jpg?ratio=16:9&amp;format=avif 2000w"/>
+<div class="scrim-band absolute inset-0"></div>
+<div class="shell relative grid gap-12 lg:grid-cols-2 lg:items-center">
+<div>
+<p class="eyebrow text-white/70">Aula experimental</p>
+<h2 class="display t-xxl mt-4 text-white">
+                Venha sentir<br/>
+                o peso.<br/>
+<span class="text-[var(--primary-color)]">Depois decida.</span>
+</h2>
+<p class="lead mt-6 max-w-md text-white/75">
+                Agende um treino experimental, conheça o espaço e converse com a equipe sobre o seu
+                objetivo. Sem compromisso.
+            </p>
+<div class="mt-8 flex flex-col gap-3 sm:flex-row">
+<a class="btn-volt" data-wa="" href="https://wa.me/?text=Quero%20agendar%20uma%20aula%20experimental%20no%20VOLT%20Training%20Club" rel="noopener noreferrer" target="_blank">
+<i aria-hidden="true" class="fa-brands fa-whatsapp text-base"></i>
+                    Agendar no WhatsApp
+                </a>
+<a class="btn-line" href="#planos">Ver planos</a>
+</div>
+<ul class="mt-8 grid gap-2.5 text-sm text-white/65">
+<li class="flex items-center gap-2.5">
+<i aria-hidden="true" class="fa-solid fa-check text-[0.7rem] text-[var(--primary-color)]"></i>
+                    Treino acompanhado pela equipe
+                </li>
+<li class="flex items-center gap-2.5">
+<i aria-hidden="true" class="fa-solid fa-check text-[0.7rem] text-[var(--primary-color)]"></i>
+                    Conheça a estrutura completa
+                </li>
+<li class="flex items-center gap-2.5">
+<i aria-hidden="true" class="fa-solid fa-check text-[0.7rem] text-[var(--primary-color)]"></i>
+                    Agendamento direto pelo WhatsApp
+                </li>
+</ul>
+</div>
+<div class="panel p-6 sm:p-8">
+<h3 class="display text-[1.5rem] text-white">Agende sua aula</h3>
+<p class="mt-2 text-sm leading-relaxed text-[var(--text-muted)]">
+                Preencha os dados e a equipe entra em contato para confirmar dia e horário.
+            </p>
+<form class="mt-6 grid gap-4" id="trial-form">
+<div>
+<label class="field-label" for="trial-nome">Nome</label>
+<input autocomplete="name" class="field-input" id="trial-nome" name="nome" placeholder="Seu nome" required="" type="text"/>
+</div>
+<div class="grid gap-4 sm:grid-cols-2">
+<div>
+<label class="field-label" for="trial-whatsapp">WhatsApp</label>
+<input autocomplete="tel" class="field-input" id="trial-whatsapp" inputmode="tel" name="whatsapp" placeholder="(00) 00000-0000" required="" type="tel"/>
+</div>
+<div>
+<label class="field-label" for="trial-email">E-mail</label>
+<input autocomplete="email" class="field-input" id="trial-email" name="email" placeholder="voce@email.com" type="email"/>
+</div>
+</div>
+<div>
+<label class="field-label" for="trial-objetivo">Objetivo</label>
+<select class="field-input" id="trial-objetivo" name="objetivo">
+<option value="Ganhar força e massa muscular">Ganhar força e massa muscular</option>
+<option value="Emagrecer e condicionar">Emagrecer e condicionar</option>
+<option value="Melhorar o condicionamento no HIIT">Melhorar o condicionamento no HIIT</option>
+<option value="Acompanhamento personalizado">Acompanhamento personalizado</option>
+<option value="Ainda estou decidindo">Ainda estou decidindo</option>
+</select>
+</div>
+<div>
+<label class="field-label" for="trial-mensagem">Mensagem (opcional)</label>
+<textarea class="field-input" id="trial-mensagem" name="mensagem" placeholder="Melhores dias e horários para treinar" rows="3"></textarea>
+</div>
+<button class="btn-volt is-block" type="submit">Enviar pedido</button>
+<p aria-live="polite" class="hidden border-l-2 border-[var(--primary-color)] bg-white/5 px-4 py-3 text-sm text-white" id="trial-success" role="status"></p>
+<p aria-live="polite" class="hidden border-l-2 border-[var(--accent-color)] bg-white/5 px-4 py-3 text-sm text-white" id="trial-error" role="status"></p>
+<p class="form-note">Ao enviar, você será direcionado ao WhatsApp quando o contato da academia estiver configurado. Nenhum dado é armazenado neste site.</p></form>
+</div>
+</div>
+</section><!-- /twig-include:sections/index.experimental.html -->
+<!-- twig-include:sections/index.faq.html --><!-- Explain: Section containing frequently asked questions. -->
+<section class="sec scroll-mt-20 border-t border-white/10 bg-[var(--graphite)]" id="faq">
+<div class="shell grid gap-12 lg:grid-cols-12 lg:gap-14">
+<div class="lg:col-span-4">
+<p class="eyebrow">Perguntas frequentes</p>
+<h2 class="display t-xxl mt-4 text-white">
+                Antes de<br/>
+<span class="text-[var(--primary-color)]">começar.</span>
+</h2>
+<p class="mt-6 max-w-xs text-sm leading-relaxed text-[var(--text-muted)]">
+                Não encontrou a sua dúvida?
+                <a class="font-semibold text-white underline decoration-[var(--primary-color)] decoration-2 underline-offset-4" href="#experimental">Fale com a equipe</a>.
+            </p>
+</div>
+<div class="lg:col-span-8">
+<details class="faq-item" open="">
+<summary>
+                    Como funciona a aula experimental?
+                    <span class="faq-icon">
+<i aria-hidden="true" class="fa-solid fa-plus text-[0.65rem] text-white"></i>
+</span>
+</summary>
+<p>Você agenda pelo WhatsApp, escolhe o melhor dia e horário e faz um treino acompanhado pela equipe. Na visita, conhece o espaço e conversa sobre o seu objetivo.</p>
+</details>
+<details class="faq-item">
+<summary>
+                    Preciso de experiência para começar?
+                    <span class="faq-icon">
+<i aria-hidden="true" class="fa-solid fa-plus text-[0.65rem] text-white"></i>
+</span>
+</summary>
+<p>Não. O treino é ajustado ao seu nível, da primeira semana ao avançado, com progressão conforme a sua resposta ao estímulo.</p>
+</details>
+<details class="faq-item">
+<summary>
+                    Quais modalidades posso treinar?
+                    <span class="faq-icon">
+<i aria-hidden="true" class="fa-solid fa-plus text-[0.65rem] text-white"></i>
+</span>
+</summary>
+<p>Musculação, treinamento funcional, HIIT e acompanhamento personalizado. A combinação depende do seu objetivo e da orientação da equipe.</p>
+</details>
+<details class="faq-item">
+<summary>
+                    Como funcionam os planos?
+                    <span class="faq-icon">
+<i aria-hidden="true" class="fa-solid fa-plus text-[0.65rem] text-white"></i>
+</span>
+</summary>
+<p>Trabalhamos com plano mensal e trimestral. Os valores, as formas de pagamento e as condições são passados pela equipe no atendimento pelo WhatsApp.</p>
+</details>
+<details class="faq-item">
+<summary>
+                    Qual é o horário de funcionamento?
+                    <span class="faq-icon">
+<i aria-hidden="true" class="fa-solid fa-plus text-[0.65rem] text-white"></i>
+</span>
+</summary>
+<p>A grade varia conforme a modalidade. Envie uma mensagem no WhatsApp e a equipe confirma os dias e horários disponíveis para o seu treino.</p>
+</details>
+<details class="faq-item">
+<summary>
+                    O que devo levar no primeiro treino?
+                    <span class="faq-icon">
+<i aria-hidden="true" class="fa-solid fa-plus text-[0.65rem] text-white"></i>
+</span>
+</summary>
+<p>Roupa de treino confortável, tênis, garrafa de água e toalha. Se você já tem uma programação de treino, traga junto para a equipe avaliar.</p>
+</details>
+<details class="faq-item">
+<summary>
+                    Existe acompanhamento profissional?
+                    <span class="faq-icon">
+<i aria-hidden="true" class="fa-solid fa-plus text-[0.65rem] text-white"></i>
+</span>
+</summary>
+<p>Sim. A equipe orienta a execução, monta a programação e ajusta o treino conforme a sua evolução.</p>
+</details>
+<details class="faq-item">
+<summary>
+                    Posso mudar de plano depois?
+                    <span class="faq-icon">
+<i aria-hidden="true" class="fa-solid fa-plus text-[0.65rem] text-white"></i>
+</span>
+</summary>
+<p>Sim. As condições de mudança são tratadas direto com a equipe no atendimento, de acordo com o plano em andamento.</p>
+</details>
+</div>
+</div>
+</section><!-- /twig-include:sections/index.faq.html -->
+</main>
+ twig-include:global/footer.html 
+ Explain: Shared site footer. 
+<footer class="border-t border-white/10 bg-[var(--ink)]">
+<div class="shell py-14 lg:py-16">
+<div class="grid gap-10 lg:grid-cols-12">
+<div class="lg:col-span-5">
+<a class="display block text-3xl text-white sm:text-4xl" href="#top">Volt<span class="text-[var(--primary-color)]">.</span></a>
+<span class="mt-2 block text-[0.55rem] font-semibold uppercase tracking-[0.42em] text-white/40">Training Club</span>
+<p class="mt-6 max-w-xs text-sm leading-relaxed text-[var(--text-muted)]">
+                    Treino de força, condicionamento e acompanhamento profissional para quem decidiu evoluir de verdade.
+                </p>
+</div>
+<nav aria-label="Navegação do rodapé" class="lg:col-span-3">
+<h2 class="text-[0.62rem] font-semibold uppercase tracking-[0.3em] text-white/40">Navegação</h2>
+<ul class="mt-4 grid gap-2.5 text-sm">
+<li><a class="text-[var(--text-muted)] transition-colors hover:text-white" href="#modalidades">Modalidades</a></li>
+<li><a class="text-[var(--text-muted)] transition-colors hover:text-white" href="#experiencia">A experiência VOLT</a></li>
+<li><a class="text-[var(--text-muted)] transition-colors hover:text-white" href="#estrutura">Estrutura</a></li>
+<li><a class="text-[var(--text-muted)] transition-colors hover:text-white" href="#planos">Planos</a></li>
+<li><a class="text-[var(--text-muted)] transition-colors hover:text-white" href="#faq">Perguntas frequentes</a></li>
+</ul>
+</nav>
+<div class="lg:col-span-4">
+<h2 class="text-[0.62rem] font-semibold uppercase tracking-[0.3em] text-white/40">Contato</h2>
+<a class="btn-volt is-sm mt-4" data-wa="" href="https://wa.me/?text=Quero%20agendar%20uma%20aula%20experimental%20no%20VOLT%20Training%20Club" rel="noopener noreferrer" target="_blank">
+<i aria-hidden="true" class="fa-brands fa-whatsapp"></i>
+                    Falar no WhatsApp
+                </a>
+<ul class="mt-5 grid gap-2.5 text-sm text-[var(--text-muted)]">
+<li><a class="transition-colors hover:text-white" href="#experimental">Agendar aula experimental</a></li>
+<li><a class="transition-colors hover:text-white" href="#planos">Consultar valores dos planos</a></li>
+<li><a class="transition-colors hover:text-white" href="#faq">Tirar dúvidas antes de começar</a></li>
+</ul>
+<p class="mt-5 text-xs leading-relaxed text-white/35">
+                    Atendimento pelo WhatsApp. Valores, horários e condições são informados pela equipe.
+                </p>
+</div>
+</div>
+<div class="mt-12 flex flex-col gap-2 border-t border-white/10 pt-6 text-xs text-white/35 sm:flex-row sm:items-center sm:justify-between">
+<p>© 2026 Volt Training Club. Todos os direitos reservados.</p>
+<a class="transition-colors hover:text-white" href="#top">Voltar ao topo</a>
+</div>
+</div>
+</footer>
+ /twig-include:global/footer.html 
+<script src="assets/app.js" defer></script>
+</body>
+</html>
