@@ -1,0 +1,162 @@
+/* VOLT — estilos fornecidos pelo usuário a partir do SITE123.
+   Camada de fidelidade carregada APÓS site.css.
+   O site continua independente dos scripts e da hospedagem do SITE123. */
+
+/* === Theme: tokens e base === */
+:root {
+  --primary-color:#e10600;
+  --primary-hover:#ff2318;
+  --secondary-color:#6f7378;
+  --accent-color:#ff3b30;
+  --background-color:#0b0b0c;
+  --surface-color:#151517;
+  --graphite:#1b1d20;
+  --text-color:#f5f5f6;
+  --text-muted:#9b9ea3;
+  --border-color:rgba(255,255,255,.14);
+  --white:#ffffff;
+  --smoke:#f2f2f3;
+  --ink:#0b0b0c;
+  --ink-2:#121214;
+  --ink-muted:#55585c;
+  --font-display:'Anton','Arial Narrow',sans-serif;
+  --font-heading:'Barlow Condensed','Arial Narrow',sans-serif;
+  --font-body:'Inter',system-ui,-apple-system,sans-serif;
+}
+* {box-sizing:border-box}
+html {scroll-behavior:smooth;background:var(--background-color);-webkit-text-size-adjust:100%}
+body {overflow-x:hidden;background:var(--background-color);color:var(--text-color);font-family:var(--font-body);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+img,video {max-width:100%}
+h1,h2,h3,h4,h5,h6 {margin:0;font-weight:inherit}
+p {margin:0}
+::selection {background:var(--primary-color);color:#fff}
+:focus-visible {outline:2px solid var(--primary-color);outline-offset:3px}
+
+/* === Components: tipografia === */
+.display {font-family:var(--font-display);font-weight:400;text-transform:uppercase;line-height:.86;letter-spacing:-.015em}
+.t-hero {font-size:clamp(2.9rem,11.5vw,8rem)}
+.t-xxl {font-size:clamp(2.05rem,6.4vw,4.5rem)}
+.t-xl {font-size:clamp(1.5rem,3.6vw,2.4rem)}
+.lead {font-size:clamp(1rem,1.15vw,1.1rem);line-height:1.65;color:var(--text-muted)}
+.eyebrow {display:inline-flex;align-items:center;gap:.65rem;font-size:.68rem;font-weight:700;letter-spacing:.3em;text-transform:uppercase;color:var(--text-muted)}
+.eyebrow::before {content:"";display:block;width:26px;height:2px;background:var(--primary-color)}
+.eyebrow.on-light {color:var(--ink-muted)}
+
+/* === Components: botoes === */
+.btn-volt,.btn-line {display:inline-flex;align-items:center;justify-content:center;gap:.55rem;min-height:52px;padding:1rem 1.7rem;border:1px solid transparent;border-radius:2px;font-family:var(--font-body);font-size:.78rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;line-height:1.15;text-align:center;cursor:pointer;transition:transform .18s ease,background-color .18s ease,color .18s ease,border-color .18s ease,box-shadow .18s ease}
+.btn-volt {background:var(--primary-color);color:#fff;border-color:transparent;box-shadow:0 16px 36px -18px rgba(225,6,0,.95)}
+.btn-volt:hover {background:var(--primary-hover);border-color:transparent;transform:translateY(-2px)}
+.btn-line {border-color:rgba(255,255,255,.35);color:#fff;background:rgba(255,255,255,.03)}
+.btn-line:hover {background:#fff;border-color:#fff;color:var(--ink);transform:translateY(-2px)}
+.btn-volt.is-sm,.btn-line.is-sm {min-height:44px;padding:.72rem 1.1rem;font-size:.66rem;letter-spacing:.16em}
+.btn-volt.is-block,.btn-line.is-block {display:flex;width:100%}
+.btn-volt:disabled {opacity:.6;transform:none;cursor:progress}
+
+/* === Components: paneis, fotos, gradientes === */
+.panel {background:var(--surface-color);border:1px solid rgba(255,255,255,.12);box-shadow:none;backdrop-filter:none}
+.scrim-hero {background:linear-gradient(to top,rgba(11,11,12,.98) 4%,rgba(11,11,12,.62) 44%,rgba(11,11,12,.3) 100%)}
+.scrim-band {background:linear-gradient(100deg,rgba(11,11,12,.97) 0%,rgba(11,11,12,.88) 48%,rgba(11,11,12,.66) 100%)}
+.scrim-caption {background:linear-gradient(to top,rgba(0,0,0,.82),rgba(0,0,0,0))}
+
+/* === Components: modalidades === */
+.mod-card {position:relative;overflow:hidden;background:var(--graphite);border:1px solid rgba(255,255,255,.1);transition:border-color .25s ease,transform .25s ease}
+.mod-card:hover {border-color:rgba(225,6,0,.75);transform:translateY(-4px);box-shadow:none}
+.mod-card img {transition:transform .6s cubic-bezier(.2,.7,.2,1)}
+.mod-card:hover img {transform:scale(1.06)}
+.mod-index {font-family:var(--font-display);font-size:clamp(2.4rem,5vw,3.4rem);line-height:1;color:transparent;opacity:1;text-shadow:none;-webkit-text-stroke:1px rgba(255,255,255,.45)}
+
+/* === Components: galeria em colunas (nao em grid) === */
+.masonry {display:block;column-count:2;column-gap:.75rem}
+.masonry > figure {break-inside:avoid;margin:0 0 .75rem;position:relative;overflow:hidden;background:var(--graphite);height:auto!important;grid-column:auto!important}
+.masonry img {display:block;position:static;width:100%;height:100%;object-fit:cover;transition:transform .7s cubic-bezier(.2,.7,.2,1)}
+.masonry > figure:hover img {transform:scale(1.05)}
+@media(min-width:1024px) {
+  .masonry {column-count:3;column-gap:1rem}
+  .masonry > figure {margin-bottom:1rem}
+}
+/* A reconstrucao anterior impunha aspect-ratio:auto!important e alturas fixas.
+   Recuperamos as proporcoes declaradas no HTML exportado. */
+.masonry > figure:nth-child(1) {aspect-ratio:3/4!important}
+.masonry > figure:nth-child(2) {aspect-ratio:4/3!important}
+.masonry > figure:nth-child(3) {aspect-ratio:4/5!important}
+.masonry > figure:nth-child(4) {aspect-ratio:3/2!important}
+.masonry > figure:nth-child(5) {aspect-ratio:3/4!important}
+.masonry > figure:nth-child(6) {aspect-ratio:4/3!important}
+.masonry > figure:nth-child(7) {aspect-ratio:4/5!important}
+
+/* === Components: marquee === */
+.marquee {overflow:hidden;background:var(--primary-color);padding-block:0}
+.marquee-track {display:flex;width:max-content;animation:marquee-scroll 32s linear infinite}
+.marquee-group {display:inline-flex;align-items:center;gap:1.75rem;padding-right:1.75rem}
+.marquee-group span {font-family:var(--font-display);font-size:clamp(1rem,2.2vw,1.55rem);text-transform:uppercase;letter-spacing:.05em;color:#fff;white-space:nowrap}
+.marquee-group i {font-size:.7rem;color:rgba(255,255,255,.8)}
+@keyframes marquee-scroll {from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* === Components: FAQ === */
+.faq-item {border-bottom:1px solid rgba(255,255,255,.12)}
+.faq-item summary {display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1.15rem 0;list-style:none;cursor:pointer;font-family:var(--font-heading);font-size:clamp(1.05rem,1.7vw,1.3rem);font-weight:600;letter-spacing:.02em;text-transform:uppercase;color:#fff}
+.faq-item summary::-webkit-details-marker {display:none}
+.faq-item summary:hover {color:var(--primary-color)}
+.faq-icon {flex:0 0 auto;display:grid;place-items:center;width:30px;height:30px;border:1px solid rgba(255,255,255,.3);transition:transform .25s ease,background-color .25s ease,border-color .25s ease}
+.faq-item[open] .faq-icon {transform:rotate(45deg);background:var(--primary-color);border-color:var(--primary-color)}
+.faq-item p {max-width:62ch;padding:0 2.5rem 1.25rem 0;color:var(--text-muted);font-size:.94rem;line-height:1.7}
+
+/* === Components: formulario === */
+.field-label {display:block;margin-bottom:.4rem;font-size:.64rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.55)}
+.field-input {width:100%;min-height:48px;padding:.8rem 1rem;border:1px solid rgba(255,255,255,.18);border-radius:2px;background:rgba(255,255,255,.05);color:#fff;font-family:var(--font-body);font-size:.94rem;line-height:1.4;transition:border-color .2s ease,background-color .2s ease}
+.field-input::placeholder {color:rgba(255,255,255,.4)}
+.field-input:focus {outline:none;border-color:var(--primary-color);background:rgba(255,255,255,.08)}
+select.field-input option {color:#111}
+
+/* === Components: animacoes === */
+.motion .reveal {opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}
+.motion .reveal.is-visible {opacity:1;transform:none}
+
+/* === Layout: containers === */
+.shell {width:100%;max-width:1400px;margin-inline:auto;padding-inline:1.25rem}
+@media(min-width:640px){.shell {padding-inline:1.75rem}}
+@media(min-width:1024px){.shell {padding-inline:2.5rem}}
+.sec {padding-block:clamp(3.5rem,8vw,7rem)}
+
+/* === Layout: menu fixo === */
+.site-header {position:fixed;inset:0 0 auto;z-index:80;height:auto;background:rgba(11,11,12,.72);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.1);transition:background-color .25s ease,box-shadow .25s ease}
+.site-header.is-scrolled {background:rgba(11,11,12,.95);box-shadow:0 22px 44px -34px #000}
+.site-header .shell {height:auto}
+.nav-link {position:relative;padding:.4rem 0;font-size:.72rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.72);transition:color .2s ease}
+.nav-link::after {content:"";position:absolute;left:0;bottom:0;height:2px;width:0;background:var(--primary-color);transition:width .25s ease}
+.nav-link:hover {color:#fff}
+.nav-link:hover::after {width:100%}
+
+/* === Layout: botao hamburger === */
+.nav-toggle {display:inline-flex;flex-direction:column;justify-content:center;gap:5px;width:46px;height:46px;padding:0 11px;border:1px solid rgba(255,255,255,.22);background:rgba(255,255,255,.04);cursor:pointer;transition:border-color .2s ease,background-color .2s ease}
+.nav-toggle:hover {border-color:rgba(255,255,255,.5)}
+.nav-toggle span {display:block;height:2px;width:100%;background:#fff;transition:transform .22s ease,opacity .18s ease}
+.nav-toggle.is-open span:nth-child(1) {transform:translateY(7px) rotate(45deg)}
+.nav-toggle.is-open span:nth-child(2) {opacity:0}
+.nav-toggle.is-open span:nth-child(3) {transform:translateY(-7px) rotate(-45deg)}
+@media(min-width:1024px){.nav-toggle {display:none}}
+
+/* === Layout: menu mobile em tela cheia === */
+.drawer {position:fixed;inset:0;z-index:90;display:flex;flex-direction:column;width:100%;height:100dvh;padding:1rem 1.25rem 2rem;background:rgba(8,8,9,.985);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);opacity:0;visibility:hidden;transform:translateY(-10px);transition:opacity .22s ease,transform .22s ease,visibility .22s ease;overflow-y:auto}
+.drawer.is-open {opacity:1;visibility:visible;transform:none}
+.drawer-link {display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.9rem 0;border-bottom:1px solid rgba(255,255,255,.12);font-family:var(--font-display);font-size:1.6rem;line-height:1.1;text-transform:uppercase;color:#fff;transition:color .2s ease,padding-left .2s ease}
+.drawer-link:hover {color:var(--primary-color);padding-left:.4rem}
+body.is-locked {overflow:hidden}
+
+/* === Compatibilidade com a implementacao independente === */
+.drawer-backdrop {display:none!important} /* O overlay original ja ocupa a tela toda. */
+body.drawer-open {overflow:hidden}
+#top>section:first-child {min-height:90vh}
+.reveal {transition:opacity .6s ease,transform .6s ease}
+.faq-item:first-child {border-top:0}
+@media(max-width:767px) {
+  .t-hero {font-size:clamp(2.9rem,11.5vw,8rem)}
+  .t-xxl {font-size:clamp(2.05rem,6.4vw,4.5rem)}
+}
+@media(max-width:480px) {.t-hero {font-size:clamp(2.9rem,11.5vw,8rem)}}
+@media(prefers-reduced-motion:reduce) {
+  html {scroll-behavior:auto}
+  *,*::before,*::after {animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important}
+  .marquee-track {animation:none!important}
+  .motion .reveal,.reveal {opacity:1;transform:none;transition:none}
+}
