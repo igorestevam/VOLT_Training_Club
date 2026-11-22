@@ -95,9 +95,12 @@ textarea.field-input {resize:vertical;min-height:92px}
 .faq-item summary::-webkit-details-marker {display:none}
 .faq-item summary::marker {content:''}
 .faq-item summary:hover {color:#ff5862;padding-left:5px}
-.faq-item .faq-icon {display:flex;justify-content:center;align-items:center;flex-shrink:0;width:32px;height:32px;border:1px solid rgba(255,255,255,.22);transition:background .42s cubic-bezier(.22,1,.36,1),border-color .35s,transform .48s cubic-bezier(.22,1,.36,1),box-shadow .42s}
-.faq-item[open] .faq-icon {background:var(--primary-color);border-color:var(--primary-color);transform:rotate(45deg);box-shadow:0 0 20px rgba(255,20,36,.18)}
-.faq-item.is-closing .faq-icon {background:transparent;border-color:rgba(255,255,255,.22);transform:rotate(0);box-shadow:none}
+.faq-item .faq-icon {display:flex;justify-content:center;align-items:center;flex-shrink:0;width:32px;height:32px;border:1px solid rgba(255,255,255,.22);transition:background .42s cubic-bezier(.22,1,.36,1),border-color .35s,box-shadow .42s}
+.faq-item .faq-icon i {display:inline-block;transform:rotate(0deg);transform-origin:center;transition:transform .55s cubic-bezier(.22,1,.36,1);will-change:transform}
+.faq-item[open] .faq-icon {background:var(--primary-color);border-color:var(--primary-color);box-shadow:0 0 20px rgba(255,20,36,.18)}
+.faq-item[open]:not(.is-closing) .faq-icon i {transform:rotate(135deg)}
+.faq-item.is-closing .faq-icon {background:transparent;border-color:rgba(255,255,255,.22);box-shadow:none}
+.faq-item.is-closing .faq-icon i {transform:rotate(0deg)}
 .faq-item>p {margin:0;padding:0 2.5rem 24px 0;max-width:660px;font-size:.87rem;line-height:1.85;color:var(--text-muted)}
 /* Revelação com entrada progressiva e atrasos curtos. */
 .reveal {opacity:0;transform:translate3d(0,32px,0);transition:opacity .82s cubic-bezier(.22,1,.36,1),transform .82s cubic-bezier(.22,1,.36,1);transition-delay:var(--reveal-delay,0ms)}
@@ -151,4 +154,4 @@ select.field-input.volt-select__native {position:absolute!important;width:1px!im
   #experiencia .grid.border-t > div:hover {padding-left:0}
 }
 
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}#top>section:first-child>img{animation:none}.reveal{opacity:1;transform:none;transition:none!important}.marquee-track{animation:none}.mod-card,.mod-card img,.masonry img,#planos article,.faq-item,.faq-item summary,.faq-item .faq-icon,.volt-select__menu,.volt-select__option,.volt-select__trigger,.volt-select__trigger svg,.nav-link::after,.btn-volt,.drawer,.drawer-backdrop{animation:none!important;transition:none!important}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}#top>section:first-child>img{animation:none}.reveal{opacity:1;transform:none;transition:none!important}.marquee-track{animation:none}.mod-card,.mod-card img,.masonry img,#planos article,.faq-item,.faq-item summary,.faq-item .faq-icon,.faq-item .faq-icon i,.volt-select__menu,.volt-select__option,.volt-select__trigger,.volt-select__trigger svg,.nav-link::after,.btn-volt,.drawer,.drawer-backdrop{animation:none!important;transition:none!important}}
