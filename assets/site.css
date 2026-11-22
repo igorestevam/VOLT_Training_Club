@@ -82,8 +82,9 @@ button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,
 .field-input {display:block;width:100%;min-height:48px;border:1px solid rgba(255,255,255,.22);border-radius:0;color:white;background:rgba(255,255,255,.075);padding:.8rem .95rem;font-size:.87rem;outline:none;transition:border-color .2s,background .2s}
 .field-input::placeholder {color:#929297}
 .field-input:focus {border-color:var(--primary-color);background:rgba(255,255,255,.11)}
-select.field-input {appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 7'%3E%3Cpath d='m1 1 5 5 5-5' fill='none' stroke='%23b9b9be' stroke-width='1.5'/%3E%3C/svg%3E");background-size:12px 7px;background-repeat:no-repeat;background-position:right 14px center;padding-right:38px}
-select.field-input option {background:#1d1d1f;color:#fff}
+/* Forçar opções nativas legíveis em navegadores claros e escuros. */
+select.field-input {color-scheme:light;color:#fff;background-color:#232326;appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 7'%3E%3Cpath d='m1 1 5 5 5-5' fill='none' stroke='%23b9b9be' stroke-width='1.5'/%3E%3C/svg%3E");background-size:12px 7px;background-repeat:no-repeat;background-position:right 14px center;padding-right:38px}
+select.field-input option {background:#fff;color:#171719}
 textarea.field-input {resize:vertical;min-height:92px}
 .form-note {margin-top:0;font-size:.7rem;line-height:1.7;color:#8c8c92}
 /* FAQ */
